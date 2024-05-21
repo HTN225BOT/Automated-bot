@@ -37,7 +37,7 @@ module.exports.run = async function ({ api, event, args }) {
       }
     }
 
-    await api.sendMessage(`🌍 𝗡𝗢𝗩𝗔 𝗕𝗢𝗧 ⛲ \n━━━━━━━━━━━\n${formattedAnswer} ☕`, event.threadID);
+    await api.sendMessage(`🌍 𝗡𝗢𝗩𝗔 𝗕𝗢𝗧 ⛲ \n━━━━━━━━━━━━━━━\n${formattedAnswer}━━━━━━━━━━━━━━━\nAutomated-bot-by-michael.onrender.com`, event.threadID);
   } catch (error) {
     console.error("Error:", error.message);
   }
